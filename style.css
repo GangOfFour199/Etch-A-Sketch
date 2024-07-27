@@ -1,0 +1,279 @@
+:root {
+
+    --grid-rows: 1; /* Ensuring 1:1 dimensions that function in script.js will create an even-sided grid */
+    --grid-cols: 1;
+    --colour: radial-gradient(circle, #FFFFFF, #FFEFBA);
+    
+}
+
+*, *::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; /* SUPER IMPORTANT!!! */
+}
+
+body {
+    background: var(--colour);
+}
+
+
+/* grid template has been assigned im our js createGrid() function */
+
+/* HEADER */
+
+.header {
+
+   padding: 20px 30px; 
+   border: 0.5px solid black;
+   
+}
+
+#page-title {
+    text-align: center;
+    font-size: 65px;
+} 
+
+/* MAIN CONTENT */
+
+.main-content {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    max-width: 1400px;
+    margin: 10px auto;
+    opacity: 1;
+}
+
+#buttons {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 200px;
+    border: 0.5px solid black;
+
+}
+
+#container {
+
+    display: grid;
+    width: 525px;
+    height: 525px;
+    border: 2px solid black;
+    background-color: white;
+
+}
+
+#sizeValue {
+    margin-bottom: -20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#sizeSlider {
+    width: 125px;
+    height: 10px;
+    margin: 15px 0;
+}
+
+.grid-item {
+
+    border: 1px solid black;
+    
+
+}
+
+/* COLOR PICKER */
+
+
+input[type='color'] {
+    -webkit-appearance: none;
+    height: 75px;
+    width: 75px;
+    border: none;
+}
+
+input[type='color']::-webkit-color-swatch {
+    border: none; 
+    border-radius: 25px;
+    box-shadow: rgba(255,239,186, 0.8) 0px 0px 7px 7px; /* covers grey background. Opacity is beneficial here. */
+
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0; 
+}
+
+/* webkit features are not fully secure and do not work with all OS. Avoid usage where possible. */
+/* properties used above to remove shaded box behind colorpicker wheel and to remove border */
+
+#rainbowBtn {
+
+    height: 45px;
+    width: 180px;
+    text-align: center;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+   
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px; 
+    border-radius: 25px;
+
+}
+
+#colourBtn {
+
+    height: 45px;
+    width: 180px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 25px;
+
+}
+
+#clearBtn {
+
+    height: 45px;
+    width: 180px;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 25px;
+
+}
+
+a {
+    color: violet;
+    
+}
+
+/* FOOTER */
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 0.5px solid black;
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+    font-weight: 550;
+    gap:10px;
+    width: 100%;
+    padding: 17px;
+    font-size: 18px;
+    
+}
+
+/* laptop - maxwidth = 1280px */
+/* tablets - maxwidth = 768px */
+/* mobiles - maxwidth = 480px */
+
+@media (max-width: 1280px) {
+
+    .main {
+        justify-content: center;
+        
+    }
+    
+    .main-content {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* tablets */
+
+@media (min-width: 481px) and  (max-width: 800px) {
+
+    .main-content {
+        margin: 10px 0 10px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;   
+
+    }
+
+    #container {
+        display: grid;
+        width: 50vh;
+        height: 50vh;
+
+    }
+
+    #buttons {
+        
+        width: 50vh;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .footer {
+        position: relative;
+    }
+}
+
+
+/* mobiles */
+
+@media (max-width: 480px) {
+
+    .main-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;    
+    }
+
+    #buttons {
+        width: 380px;
+        margin-bottom: 50px;
+        
+    }
+
+    #container {
+        margin-top: 10px;
+        width: 45vh;
+    }
+
+    .footer {
+        position: relative;
+    }
+
+}

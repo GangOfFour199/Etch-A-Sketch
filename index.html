@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <header class="header">
+    <h1 id="page-title">Etch-A-Sketch!</h1>
+  </header>
+
+    <main class="main-content">
+    
+      <div id="buttons">
+        <input id="colorPicker" type="color" onchange="changeBtnColour(this)"/> <!--we have imported the function, that will occur when colorpicker is changed. Make sure to include (this) as a parameter.-->
+        <button id="rainbowBtn">Rainbow</button>
+        <button id="colourBtn">Colour</button>
+        <button id="clearBtn">Clear</button>
+        <div id="sizeValue">16 x 16</div>
+        <input id="sizeSlider" type="range" value="16" min="4" max="64"/>
+      </div>
+
+      <div class="container" id="container">
+      
+    </main>
+
+  <footer class="footer">
+    <p>This project was made in partnership with <a href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch">The Odin Project</a></p>
+  </footer>
+  
+    
+<script src="script.js"></script>
+</body>
+</html>
