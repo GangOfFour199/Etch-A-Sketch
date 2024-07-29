@@ -5,9 +5,6 @@
 [1]:  https://github.com/GangOfFour199/Etch-A-Sketch/blob/main/Etch_a_Sketch.png
 [2]:  https://gangoffour199.github.io/Etch-A-Sketch/
 
-[![Preview](https://github.com/GangOfFour199/Etch-A-Sketch/blob/main/Etch_a_Sketch.png)(https://gangoffour199.github.io/Etch-A-Sketch/)]
-
-
 
 ## ABOUT
 This webpage comprises of an Etch-A-Sketch based drawing pad, complete with three different modes as well as customisable sizing of the grid. This project contains specified elements, including:
