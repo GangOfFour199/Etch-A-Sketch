@@ -1,6 +1,6 @@
 # Etch-A-Sketch
 
-![](https://github.com/GangOfFour199/Etch-A-Sketch/blob/main/Etch_a_Sketch.png)
+[![Preview](https://github.com/GangOfFour199/Etch-A-Sketch/blob/main/Etch_a_Sketch.png)(https://gangoffour199.github.io/Etch-A-Sketch/)]
 
 
 
