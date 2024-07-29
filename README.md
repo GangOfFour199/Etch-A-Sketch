@@ -1,5 +1,10 @@
 # Etch-A-Sketch
 
+[![Preview][1]][2]
+
+[1]:  https://github.com/GangOfFour199/Etch-A-Sketch/blob/main/Etch_a_Sketch.png
+[2]:  https://gangoffour199.github.io/Etch-A-Sketch/
+
 [![Preview](https://github.com/GangOfFour199/Etch-A-Sketch/blob/main/Etch_a_Sketch.png)(https://gangoffour199.github.io/Etch-A-Sketch/)]
 
 
