@@ -25,7 +25,7 @@ body {
 .header {
 
    padding: 20px 30px; 
-   border: 0.5px solid black;
+   
    
 }
 
@@ -55,7 +55,7 @@ body {
     justify-content: center;
     gap: 30px;
     width: 200px;
-    border: 0.5px solid black;
+    
 
 }
 
@@ -112,11 +112,22 @@ input[type='color']::-webkit-color-swatch-wrapper {
 /* webkit features are not fully secure and do not work with all OS. Avoid usage where possible. */
 /* properties used above to remove shaded box behind colorpicker wheel and to remove border */
 
-#rainbowBtn {
+#rainbowBtn, #colourBtn, #clearBtn {
 
     height: 45px;
     width: 180px;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 25px;
+
+}
+
+#rainbowBtn {
+
+    
     background: linear-gradient(
         90deg,
         rgba(255, 0, 0, 1) 0%,
@@ -131,42 +142,22 @@ input[type='color']::-webkit-color-swatch-wrapper {
         rgba(251, 7, 217, 1) 90%,
         rgba(255, 0, 0, 1) 100%
     );
-   
     color: white;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    font-size: 26px; 
-    border-radius: 25px;
 
 }
 
 #colourBtn {
 
-    height: 45px;
-    width: 180px;
     background-color: rgb(255, 0, 0);
     color: white;
-    justify-content: center;
-    align-items: center;
-    font-size: 26px;
-    font-weight: bold;
-    border-radius: 25px;
 
 }
 
 #clearBtn {
 
-    height: 45px;
-    width: 180px;
     background-color: white;
     color: black;
-    justify-content: center;
-    align-items: center;
-    font-size: 26px;
-    font-weight: bold;
-    border-radius: 25px;
-
+    
 }
 
 a {
@@ -199,6 +190,8 @@ a {
 /* laptop - maxwidth = 1280px */
 /* tablets - maxwidth = 768px */
 /* mobiles - maxwidth = 480px */
+
+/* laptops */
 
 @media (max-width: 1280px) {
 
