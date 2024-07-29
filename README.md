@@ -1,6 +1,6 @@
 # Etch-A-Sketch
 
-![(EaS_preview.png)](https://gangoffour199.github.io/Etch-A-Sketch/)
+![(https://github.com/GangOfFour199/Etch-A-Sketch/blob/main/assets/EaS_preview.png)](https://gangoffour199.github.io/Etch-A-Sketch/)
 
 
 
