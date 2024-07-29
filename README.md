@@ -43,6 +43,6 @@ This webpage comprises of an Etch-A-Sketch based drawing pad, complete with thre
 
 [Try the assignment on The Odin Project](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
-[Have a go with the sign-up form here!](https://gangoffour199.github.io/Etch-A-Sketch/)
+[GEt drawing here!](https://gangoffour199.github.io/Etch-A-Sketch/)
 
 This markdown file was created using [dilinger.io](https://dillinger.io/)
